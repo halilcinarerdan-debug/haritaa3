@@ -26,10 +26,10 @@ class CfgWorlds
 		plateLetters = "ABCDEGHIKLMNOPRSTVXZ";
 		author = "hcinar33";
 		mapSize = 12288;
-		mapZone = 42;
-		mapArea[] = {34.45, 69.13, 34.56, 69.27};
-		longitude = 69.2;
-		latitude = 34.5;
+		mapZone = 37;
+		mapArea[] = {33.4764, 38.8294, 33.5870, 38.9617};
+		longitude = 38.89555;
+		latitude = 33.53166;
 		elevationOffset = 0;
 		minHillsAltitude = 200;
 		maxHillsAltitude = 500;
