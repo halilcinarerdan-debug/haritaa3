@@ -109,14 +109,14 @@ class CfgWorlds
 			vehicles[] = {};
 		};
 		soundMapSizeCoef = 4;
-		satelliteNormalBlendStart = 10;
-		satelliteNormalBlendEnd = 100;
+		satelliteNormalBlendStart = 30;
+		satelliteNormalBlendEnd = 200;
 		terrainBlendMaxDarkenCoef = 1.0;
 		terrainBlendMaxBrightenCoef = 0.0;
 		clutterGrid = 1.4;
 		clutterDist = 50;
-		noDetailDist = 50;
-		fullDetailDist = 8;
+		noDetailDist = 150;
+		fullDetailDist = 30;
 		class Clutter
 		{
 #include "cfgClutter.hpp"
