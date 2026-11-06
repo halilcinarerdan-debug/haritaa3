@@ -39,7 +39,7 @@ class CfgWorlds
 		author = "hcinar33";
 
 		// --- Boyut ve konum ---
-		// Harita kenar uzunlugu (metre): 2048 hucre x 1 m = 2048 m.
+		// Harita kenar uzunlugu (metre): 1024 hucre x 2 m = 2048 m.
 		mapSize = 2048;
 		// UTM zonu.
 		mapZone = 37;
