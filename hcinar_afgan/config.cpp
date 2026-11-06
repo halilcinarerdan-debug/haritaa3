@@ -5,7 +5,7 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"A3_Map_Metadata", "A3_Map_Data"};
+		requiredAddons[] = {"A3_Map_Metadata", "A3_Map_Data", "pmc_opx_buildings_cfg", "PMC_opx_misc_cfg"};
 		author = "hcinar33";
 		worlds[] = {"hcinar_afgan"};
 	};
