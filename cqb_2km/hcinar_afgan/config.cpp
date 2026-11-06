@@ -39,12 +39,12 @@ class CfgWorlds
 		author = "hcinar33";
 
 		// --- Boyut ve konum ---
-		// Harita kenar uzunlugu (metre): 1024 hucre x 1 m = 1024 m.
-		mapSize = 1024;
+		// Harita kenar uzunlugu (metre): 2048 hucre x 1 m = 2048 m.
+		mapSize = 2048;
 		// UTM zonu.
 		mapZone = 37;
 		// Haritanin gercek dunyadaki koordinat kutusu: guneybati enlem/boylam, kuzeydogu enlem/boylam.
-		mapArea[] = {33.52705, 38.89003, 33.53627, 38.90107};
+		mapArea[] = {33.52245, 38.88452, 33.54087, 38.90658};
 		// Gunes ve ay konumunu belirleyen enlem/boylam.
 		longitude = 38.89555;
 		latitude = 33.53166;
@@ -83,7 +83,7 @@ class CfgWorlds
 		class Grid
 		{
 			offsetX = 0;
-			offsetY = 1024;
+			offsetY = 2048;
 			class Zoom1
 			{
 				// Bu zoom degerine kadar gecerli (kucuk = cok yakin).
@@ -129,9 +129,9 @@ class CfgWorlds
 
 		// --- Merkez ve konum referanslari ---
 		// Harita merkezi (x, y, z).
-		centerPosition[] = {512, 512, 0};
+		centerPosition[] = {1024, 1024, 0};
 		// Martilarin (seagull) dolastigi konum.
-		seagullPos[] = {512, 130, 512};
+		seagullPos[] = {1024, 130, 1024};
 
 		// --- Havalimani ayarlari (burada havalimani yok, bos birakildi) ---
 		ilsPosition[] = {0, 0};
@@ -186,7 +186,7 @@ class CfgWorlds
 		class Ambient {};
 
 		// Rastgele guvenli konum bulma (spawn) icin referans nokta ve yaricap.
-		safePositionAnchor[] = {512, 512};
+		safePositionAnchor[] = {1024, 1024};
 		safePositionRadius = 50;
 		// Yukleme ekraninda gorunen yazi.
 		loadingTexts[] = {"Hcinar Afgan CQB"};
