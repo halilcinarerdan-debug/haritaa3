@@ -36,7 +36,7 @@ class CfgWorlds
 		minTreesInForestSquare = 4;
 		minRocksInRockSquare = 3;
 		envTexture = "A3\data_f\env_land_ca.paa";
-		newRoadsShape = "hcinar_afgan\data\Roads\RoadsLib.cfg";
+		newRoadsShape = "hcinar_afgan\data\Roads\roads.shp";
 		class OutsideTerrain
 		{
 			satellite = "hcinar_afgan\data\s_satout_co.paa";
