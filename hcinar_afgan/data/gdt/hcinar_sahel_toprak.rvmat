@@ -1,14 +1,14 @@
 ambient[] = {1, 1, 1, 1};
 diffuse[] = {1, 1, 1, 1};
 forcedDiffuse[] = {0, 0, 0, 0};
-emmisive[] = {0, 0, 0, 1};
-specular[] = {0, 0, 0, 1};
+specular[] = {0, 0, 0, 0};
 specularPower = 1;
-PixelShaderID = "TerrainSNX";
-VertexShaderID = "Terrain";
+emmisive[] = {0, 0, 0, 0};
+PixelShaderID = "NormalMapDiffuse";
+VertexShaderID = "NormalMapDiffuseAlpha";
 class Stage1
 {
-	texture = "hcinar_afgan\data\gdt\pisek_detail_nohq.paa";
+	texture = "hcinar_afgan\data\gdt\gdt_desert_nopx.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -20,7 +20,7 @@ class Stage1
 };
 class Stage2
 {
-	texture = "hcinar_afgan\data\gdt\pisek_detail_co.paa";
+	texture = "hcinar_afgan\data\gdt\gdt_desert_co.paa";
 	uvSource = "tex";
 	class uvTransform
 	{

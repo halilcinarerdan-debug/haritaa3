@@ -11,11 +11,6 @@ class CfgPatches
 	};
 };
 
-class CfgWorldList
-{
-	class hcinar_afgan {};
-};
-
 class CfgWorlds
 {
 	class CAWorld;
@@ -24,40 +19,45 @@ class CfgWorlds
 		access = 3;
 		cutscenes[] = {};
 		description = "Hcinar Afgan";
-		worldName = "hcinar_afgan\hcinar_afgan.wrp";
-		author = "hcinar33";
 		icon = "";
+		worldName = "hcinar_afgan\hcinar_afgan.wrp";
 		pictureMap = "";
-		pictureShot = "";
-		plateFormat = "ID$ - ####";
-		plateLetters = "ABCDEFGHJKLMNOPRSTUVWXYZ";
+		plateFormat = "#Z# ## ##";
+		plateLetters = "ABCDEGHIKLMNOPRSTVXZ";
+		author = "hcinar33";
+		mapSize = 12288;
+		mapZone = 42;
+		mapArea[] = {34.45, 69.13, 34.56, 69.27};
 		longitude = 69.2;
 		latitude = 34.5;
-		mapSize = 12288;
-		mapArea[] = {0, 0, 12288, 12288};
-		centerPosition[] = {6144, 6144, 0};
-		seaLevel = -500;
-		startTime = "08:00";
-		startDate = "15/6/2035";
-		startWeather = 0.1;
-		startFog = 0;
-		startFogDecay = 0.01;
-		forecastWeather = 0.1;
-		forecastFog = 0;
-		forecastFogDecay = 0.01;
-		ambient[] = {};
-		clutterGrid = 1;
-		clutterDist = 125;
-		noDetailDist = 65;
-		minTreesInForestSquare = 10;
-		minRocksInRockSquare = 5;
+		elevationOffset = 0;
+		minHillsAltitude = 200;
+		maxHillsAltitude = 500;
+		minTreesInForestSquare = 4;
+		minRocksInRockSquare = 3;
+		envTexture = "A3\data_f\env_land_ca.paa";
+		newRoadsShape = "hcinar_afgan\data\Roads\RoadsLib.cfg";
+		class OutsideTerrain
+		{
+			satellite = "hcinar_afgan\data\s_satout_co.paa";
+			enableTerrainSynth = false;
+			class Layers
+			{
+				class Layer0
+				{
+					nopx = "hcinar_afgan\data\gdt\gdt_desert_nopx.paa";
+					texture = "hcinar_afgan\data\gdt\gdt_desert_co.paa";
+				};
+			};
+			colorOutside[] = {0.227451, 0.27451, 0.384314, 1};
+		};
 		class Grid
 		{
 			offsetX = 0;
 			offsetY = 12288;
 			class Zoom1
 			{
-				zoomMax = 0.15;
+				zoomMax = 0.05;
 				format = "XY";
 				formatX = "000";
 				formatY = "000";
@@ -66,7 +66,7 @@ class CfgWorlds
 			};
 			class Zoom2
 			{
-				zoomMax = 0.85;
+				zoomMax = 0.5;
 				format = "XY";
 				formatX = "00";
 				formatY = "00";
@@ -83,21 +83,50 @@ class CfgWorlds
 				stepY = -10000;
 			};
 		};
+		startTime = "10:00";
+		startDate = "24/6/2035";
+		centerPosition[] = {6144, 6144, 0};
+		seagullPos[] = {6144, 130, 6144};
+		ilsPosition[] = {0, 0};
+		ilsDirection[] = {0, 0, 1};
+		ilsTaxiOff[] = {};
+		ilsTaxiIn[] = {};
+		drawTaxiway = 0;
+		class SecondaryAirports {};
+		class ReplaceObjects {};
+		class Sounds
+		{
+			sounds[] = {};
+		};
+		class Animation
+		{
+			vehicles[] = {};
+		};
+		soundMapSizeCoef = 4;
+		satelliteNormalBlendStart = 10;
+		satelliteNormalBlendEnd = 100;
+		terrainBlendMaxDarkenCoef = 1.0;
+		terrainBlendMaxBrightenCoef = 0.0;
+		clutterGrid = 1.4;
+		clutterDist = 50;
+		noDetailDist = 50;
+		fullDetailDist = 8;
+		class Clutter
+		{
+#include "cfgClutter.hpp"
+		};
 		class Names {};
-		#include "cfgClutter.hpp"
+		ambient[] = {};
+		class Ambient {};
+		safePositionAnchor[] = {6144, 6144};
+		safePositionRadius = 100;
+		loadingTexts[] = {"Hcinar Afgan"};
 	};
+};
+
+class CfgWorldList
+{
+	class hcinar_afgan {};
 };
 
 #include "cfgSurfaces.hpp"
-
-class CfgRoads
-{
-	class hcinar_toprak_yol
-	{
-		width = 6.0;
-		AIpathCost = 1.0;
-		mainTexture = "a3\roads_f\roads_ae\data\road_dirt_co.paa";
-		endsTexture = "a3\roads_f\roads_ae\data\road_dirt_end_co.paa";
-		material = "a3\roads_f\roads_ae\data\road_dirt.rvmat";
-	};
-};
