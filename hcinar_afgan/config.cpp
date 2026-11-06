@@ -85,6 +85,12 @@ class CfgWorlds
 		};
 		startTime = "10:00";
 		startDate = "24/6/2035";
+		startWeather = 0.1;
+		startFog = 0;
+		startFogDecay = 0.01;
+		forecastWeather = 0.1;
+		forecastFog = 0;
+		forecastFogDecay = 0.01;
 		centerPosition[] = {6144, 6144, 0};
 		seagullPos[] = {6144, 130, 6144};
 		ilsPosition[] = {0, 0};
