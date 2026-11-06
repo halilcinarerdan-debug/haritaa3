@@ -116,7 +116,6 @@ class CfgWorlds
 #include "cfgClutter.hpp"
 		};
 		class Names {};
-		ambient[] = {};
 		class Ambient {};
 		safePositionAnchor[] = {6144, 6144};
 		safePositionRadius = 100;
